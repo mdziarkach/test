@@ -7,7 +7,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/ping', (req, res) => {
-  res.send('pong')
+  res.send('pon g')
+})
+
+app.get('/new', (req, res) => {
+  res.status(201).send('new')
 })
 
 app.listen(3000, () => {
